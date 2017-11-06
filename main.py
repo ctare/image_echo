@@ -12,4 +12,9 @@ def echo():
     return res
 
 
+@get("/")
+def index():
+    return "<p>/echo?url=&lt;image url&gt;</p>"
+
+
 run(host="0.0.0.0", port=5000, reloader=True)
